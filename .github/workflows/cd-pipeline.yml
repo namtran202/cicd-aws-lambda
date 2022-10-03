@@ -1,14 +1,12 @@
-# name: SAM CI pipeline file
+# name: CD pipeline
 
 # on:
-#   pull_request:
-     
 #   push:
 #     branches:
 #       - main
 
 # jobs:
-#   build-deploy:
+#   run-cd-pipeline:
 #     runs-on: ubuntu-latest
 #     steps:
 #       - uses: actions/checkout@v2
@@ -22,5 +20,5 @@
 #       # sam build 
 #       - run: sam build --use-container
 
-# # sam deploy
+#       # sam deploy
 #       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-app --s3-bucket nam-test-1809 --capabilities CAPABILITY_IAM --region ap-south-1

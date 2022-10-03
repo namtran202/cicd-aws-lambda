@@ -1,0 +1,13 @@
+name: CI pipeline
+
+on:
+  pull_request:
+
+jobs:
+  run-ci-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+
+      - run: make run
