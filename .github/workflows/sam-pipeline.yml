@@ -1,0 +1,10 @@
+name: Call CI/CD
+
+on:
+  workflow_call:
+
+jobs:
+  call-workflow-ci:
+    uses: ./.github/workflows/ci-pipeline.yml
+  call-workflow-cd:
+    uses: ./.github/workflows/cd-pipeline.yml
